@@ -17,7 +17,7 @@
         intport: '8086'
         extport: '8086'
         intport2:'8083'
-	extport2:'8083'
+        extport2:'8083'
         image: 'influxdb/influxdb'
 
     # CORE (MANDATORY) ############################################################
