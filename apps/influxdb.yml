@@ -16,8 +16,6 @@
         pgrole: 'influxdb'
         intport: '8086'
         extport: '8086'
-        intport2: '8083'
-        extport2: '8083'
         image: 'influxdb/influxdb'
 
     # CORE (MANDATORY) ############################################################
@@ -44,7 +42,6 @@
         pull: yes
         published_ports:
           - '{{ports.stdout}}{{extport}}:{{intport}}'
-          - '{{ports.stdout}}{{extport2}}:{{intport2}}'
         volumes: '{{pg_volumes}}'
         env: '{{pg_env}}'
         restart_policy: unless-stopped
