@@ -33,7 +33,7 @@
     - name: 'Setting PG Volumes'
       set_fact:
         pg_volumes:
-          - '/opt/mycontainers/{{pgrole}}/otmonitor.conf:/app/otmonitor.conf'
+          - '/opt/mycontainers/{{pgrole}}/otmonitor.conf:/data/otmonitor.conf'
 
     - name: 'Setting PG ENV'
       set_fact:
